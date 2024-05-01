@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>Aumente e diminuo o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="IMAGENS/FotoP.png" type="image/png">
+        <!--se for menor que 750px carrega a foto P, a imagem menor tem que ser o primeiro codigo-->
+        <source media="(max-width: 1050px)" srcset="IMAGENS/FotoM.png" type="image/png">
+        <!--Se a for menor que 1050px carrega a foto M -->
+        <img src="IMAGENS/FotoG.png" alt="Imagen flex">
+        <!--Carrega a imagem-->
+    </picture>
+</body>
+</html>

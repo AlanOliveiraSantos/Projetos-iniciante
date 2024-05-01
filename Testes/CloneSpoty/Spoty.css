@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    background-color: black;
+}
+.esquerda{
+    display: inline-flex;
+    flex-direction: column;
+    width: 350px;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+}
+.Menu{
+    display:block;
+    padding: 5px 13px;
+    width: 94%;
+}
+.white-icon{
+    color: white;
+    font-size: 30px;
+}
+.Menu  a{
+    pointer-events: none;
+}
+
+/* Home */
+.Home{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    width: 350px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.Home span{
+    padding: 18px;
+    font-size: 18px;
+    word-spacing: 10px;
+}
+.Home #icon-search{
+    pointer-events: none;
+}
+
+.Home input{
+    height: 30px;
+    width: 260px;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+}
+::-webkit-input-placeholder{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.Home span box-icon{
+    vertical-align: middle;
+}
+
+/* Biblioteca */
+.biblioteca{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    border-radius: 6px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.biblioteca #bibli{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.biblioteca  box-icon{
+    vertical-align: middle;
+}
+/* Playlist-Artistas*/
+.biblioteca p#playlists-artistas{
+    padding-top: 10px;
+}
+.biblioteca p#playlists-artistas a{
+    margin-left: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    word-spacing: 10px;
+    color: white;
+    background-color: rgba(99, 94, 94, 0.795);
+}
+.biblioteca #playlists-artistas a:hover{
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+/* Busca */
+.biblioteca .Search-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 15px 15px;
+}
+.biblioteca .search-box{
+    background: linear-gradient(to right, rgb(146, 4, 82), rgb(153, 36, 15));
+    padding: 5px;
+    border-radius: 10px;
+}
+.biblioteca .search{
+    outline: none;
+    border: none;
+    color: black;
+    background: linear-gradient(to right, rgb(146, 4, 82), rgb(153, 36, 15));
+    font-size: 16px;
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+}
+.biblioteca.search-box:hover{
+    width: 10px;
+}
+.biblioteca .search-box:hover > .search{
+    width: 100px;
+    height: 20px;
+    padding: 0.6px;
+    color: white;
+}
+.biblioteca .search-btn{
+    transition: 0,5s;
+    pointer-events: none;
+}
+.biblioteca .recentes{
+    padding-right: 15px;
+}
+/* Musicas */
+.biblioteca #music{
+    color: rgb(0, 0, 0);
+    background-color: rgb(231, 231, 231);
+    margin: 1px 3px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.biblioteca #music:hover{
+    background-color: rgba(0, 0, 0, 0.664);
+    color: rgb(247, 247, 247);
+    padding: 0px;
+}
+.biblioteca #music a{
+    color: white;
+    pointer-events: none;
+}
+.biblioteca img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    vertical-align: middle;
+    padding: 10px 20px 10px 15px;
+}
+
+/* Navbar direita*/
+.direita{
+    display: inline-flex;
+    flex-direction: column;
+    float: right;
+    width: 350px;
+    height: 95vh;
+    margin-right: 5px;
+    border-radius: 6px;
+    color: black;
+    background-color: white;
+    
+}
+.direita a:hover{
+    background-color: rgba(172, 170, 170, 0.719);
+    border-radius: 5px;
+    padding: 0px;
+}
+.direita p#albun{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 9px 10px 5px 10px;
+    vertical-align: center;
+}
+.direita .dir-img{
+    display: inline-flex;
+    justify-content: center;
+}
+.direita img{
+    width: 340px;
+    height: 350px;
+    border-radius: 10px;
+    padding-bottom: 0px;
+}
+.direita #nome-musica {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 9px 10px 5px 10px;
+}
+.direita #nome-musica > a:hover{
+    text-decoration: underline 3px rgba(172, 7, 7, 0.808);
+    background-color: transparent;
+}
+.direita #artista{
+    padding: 0px 10px 5px 10px;
+}
+.direita #artista > a:hover{
+    text-decoration: underline 3px rgba(172, 7, 7, 0.808);
+    background-color: transparent;
+}
+.direita i{
+    display: inline-flex;
+     
+}
+.direita #plus-circle{
+    margin-right: 20px;
+}
+.direita .dir-img2{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(39, 26, 26, 0.911);
+    margin: 5px;
+    border-radius: 10px;
+}
+.dir-img2 img{
+    width: 340px;
+    height: 350px;
+    border-radius: 10px;
+}
+.text{
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    color: white; 
+}
+.dir-img2 p{
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 9px 10px 5px 10px;
+    color: white;
+    word-spacing: 5px;
+    
+}
+.dir-img2 p a{
+    position: absolute;
+    left: 270px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    color: white;
+}
+.dir-img2 p a:hover{
+    position: absolute;
+    left: 270px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 8px;
+    background-color:transparent;
+}
+
+/* Center */
+.center{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    width: 61.3%;
+}
+.center a{
+    background: linear-gradient(to top, rgb(240, 240, 240), rgba(18, 19, 18, 0.747));
+    border-radius: 10px 0px 0px 10px;
+    height: 60px;
+}
+.center a:hover{
+    padding: 0px;
+    background-color: rgb(238, 27, 27);
+}
+.center .div-center{
+    padding: 10px;
+}
+.center .top-center{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.center .img-center{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 20px 30px ;
+}
+.center .img-center span{
+    
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+}
+.center .img-center span p{
+    padding-left: 15px;
+}
+.center img{
+    padding: 0px;
+    width: 70px;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+.center  p{
+    margin: 30px 0px 20px 0px;
+    font-size: 25px;
+    width: 100%;
+}
+.center .playlist-center div{
+    display: inline-flex;
+    width: 100%;
+    gap: 42px;
+}
+.center .playlist-center img{
+    width: 190px;
+    height: 180px;
+}
+.center .playlist-center span{
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+.center .playlist-center span i{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+/* play */
+.play{
+    display: inline-flex;
+    background-color: white;
+    justify-content: center;
+}
+.play audio{
+    width: 700px;
+    color: black;
+}

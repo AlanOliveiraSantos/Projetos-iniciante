@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faixas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><strong>Medidas da Capa</strong></h1>
+      <div class="comprimento">
+        <input type="number" name="Comp" id="idComp" placeholder="Comprimento" required/>
+      </div>
+      <p><strong>X</strong></p>
+      <div class="largura">
+        <input type="number" name="Larg" id="Larg" placeholder="Largura" required/>
+      </div>
+      <br />
+      <div class="enviar">
+        <input type="button" value="Enviar" onclick="enviar()" required/>
+      </div>
+      <br />
+      <div id="rescomp"></div>
+      <div id="reslarg"></div>
+      <br />
+      <div id="medfinal"></div>
+    </div>
+
+    <script>
+      function enviar() {
+        var comprimento = document.getElementById("idComp");
+        var numcomp = Number(comprimento.value);
+        var compri = numcomp + 0.15;
+
+        var lar = document.getElementById("Larg").value;
+        var largfaixa = 1.38;
+        var perdaporjuncao = 0.03;
+        var numerofaixas = 0;
+        var larguratotal = 0;
+
+        while (larguratotal < lar) {
+          if (numerofaixas > 0) {
+            larguratotal += largfaixa - perdaporjuncao;
+          } else {
+            larguratotal += largfaixa;
+          }
+          numerofaixas++;
+        }
+        var falta = larguratotal - lar;
+        reslarg.innerHTML = `Faixas Necessárias: <br>${numerofaixas} de ${compri.toFixed(
+          2
+        )} <br> <br>
+        Excesso de Largura:<br> ${falta.toFixed(2)}`;
+
+        medfinal.innerHTML = `MEDIDA TOTAL <br>${compri.toFixed(
+          2
+        )} x ${larguratotal.toFixed(2)}`;
+      }
+    </script>
+  </body>
+</html>

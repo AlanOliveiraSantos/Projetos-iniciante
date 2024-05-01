@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fomrulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <fieldset> <!-- Agrupa os elementos -->
+        <legend>Dados</legend>
+        
+        <form action="" method="post" autocomplete="on">
+            <!-- action: indicar para onde sera enviado os dados do formulario
+                 autocomplete: sugestões para inserir no campo ja utilizados -->
+            <div class="caixa-usuario">
+                <label for="iusu"> Usuário:</label>
+            <!-- Vincula a palavra com o input -->
+                <input type="text" name="usu" id="iusu" required autocomplete="username">
+            <!-- autocomplete: sugestoes de nomes ja utilizados no navegador -->
+            </div>
+        <br>
+            <div class="caixa-senha">
+                <label for="isenha">Senha:</label>
+                <input type="password" name="isenha" id="senha" required minlength="5">
+            <!-- Nome: Serve para indentificar o elemnto quando for para o backand
+                 id: Serve para indentificar o elemnto no JS e CSS
+                 required: Torna o elemento obrigario para o envio do formulario
+                 minlenght: Minimo de digitos para ser aceito, ou utilizar (maxlenght) -->
+            </div>
+        <br>
+            <div class="enviar">
+                <input type="submit" value="Enviar">
+            <!-- Envia os dados dos elementos dentro do <form> -->
+                <input type="reset" value="limpar">
+            <!-- Limpa os dados dos elementos dentro do <form> -->
+            </div>
+        <br>
+            <div class="caixa-numero">
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5">
+                <!-- step: indica de quanto em quanto a nota muda -->
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

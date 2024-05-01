@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem background</title>
+
+    <style>
+        .retangulo{
+            margin: 10px;
+            height: 200px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .quadrado{
+            display: inline-block;
+            border: 1px solid black;
+            width: 300pX;
+            height: 300px;
+            border-radius: 10px;
+            background-color: lightgrey;
+        }
+        body{
+            background-image: url(IMAGENS/wallpaper001.jpg);
+        }
+        #q1{
+            background-image: url(IMAGENS/pattern003.png);
+            background-repeat: repeat-y; /* Repete a imagem verticalmente*/
+            background-position: right;
+        }
+        #q2{
+            background-image: url(IMAGENS/pattern002.png);
+            background-repeat: repeat-x; /* Repete a imagem horizontalmente*/
+            background-position: bottom;
+        }
+        #q3{
+            background-image: url(IMAGENS/pattern001.png);
+            background-size: 200px;
+            background-repeat: no-repeat;/* Não repete a imagem varias vezes para cubrir um espaço*/
+            background-position: center;
+        }
+        #q4{
+            background-image: url(IMAGENS/wallpaper002.jpg);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+    <div class="retangulo" id="q4"></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páis</title>
+</head>
+<body>
+    <h1>Você é estrangeiro?</h1>
+    Selecione um <b>páis</b> <input type="text" value="" id="txtpa">
+    <input type="button" value="enviar" onclick="leia()">
+    <div id="res"></div>
+
+    <script>
+        function leia() {
+            var pais = document.getElementById('txtpa').value
+            document.getElementById("res")
+            if(pais=="brasil"){
+            res.innerHTML = `<p> Você não é <b>estrangeiro</b></p>`
+            }
+            else{
+                res.innerHTML = '<p> Você é <b>estrangeiro</b></p>'
+            }
+        }
+    </script> 
+</body>
+</html>
+
+
+

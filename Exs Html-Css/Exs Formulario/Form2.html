@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+    <h1> Exemplo Formulário 2</h1>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="idmas">
+            <label for="idmas">Masculino</label>
+<!-- Utilizar o msm "name" nesse tipo de input se não da merda -->
+            <input type="radio" name="sex" id="idfem">
+            <label for="idfem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut" checked>  
+            <label for="iesfut">Futebol</label><br>
+
+            <input type="checkbox" name="esvol" id="iesvol"> 
+            <label for="iesvol">Volei</label><br>
+
+            <input type="checkbox" name="esbox" id="iesbox">
+            <label for="iesbox">Box</label><br>
+
+            <input type="checkbox" name="esbas" id="iesbas"> 
+            <label for="iesbas">Basquete</label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

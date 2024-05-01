@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloneYT</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Spoty.css">
+<head>
+<body>
+    <div class="Menu">
+        <a href="#">
+            <i class='bx bx-dots-horizontal-rounded white-icon'></i>
+        </a>
+    </div>
+    <nav class="esquerda">
+        <div class="Home">   
+            <span>
+                <a href="#">
+                    <box-icon name='home' ></box-icon>
+                    Inicio
+                </a>
+            </span>
+                
+            <span>
+                <a href="#" id="icon-search">
+                    <box-icon  name='search-alt'></box-icon>      
+                </a>
+                <input type="text" placeholder="Buscar">
+            </span>
+        </div>
+
+        <div class="biblioteca">
+            <span id="bibli">
+                <i>
+                    <a href="#">
+                        <box-icon name='library'></box-icon>
+                        Sua Biblioteca
+                    </a>
+                </i>
+                <i>
+                    <a href="#"><box-icon name='plus' id="plus" ></box-icon></a>
+                    <a href="#"><box-icon name='redo' id="redo" ></box-icon></a>
+                </i> 
+            </span>
+
+            <p id="playlists-artistas">
+                <a href="#">Playlists</a>
+                <a href="#">Artistas</a>
+            </p>
+
+            <div class="Search-box">
+                <div class="search-box">
+                    <a href="#" class="search-btn">
+                        <box-icon name='search' ></box-icon>
+                    </a>
+                    <input type="text" class="search" placeholder="Buscar">
+                </div>
+                 
+                <div class="recentes">
+                    <a href="#">Recentes <box-icon name='align-left'></box-icon></a></div>
+            </div>
+
+            <a href="https://open.spotify.com/playlist/4Uvsig2zYW4uTd5LKeQ14u?si=81fbe132545544cc" target="_blank" id="music">
+                <img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="pikabones">Frieren
+            </a>
+            <a href="https://open.spotify.com/playlist/21RDYPsDVseXoVFu4QiIoh?si=48a163dc1f2a4aa0" target="_blank" id="music">
+                <img src="img/545909.jpg" alt="kaneko"> Kaneko
+            </a>
+            <a href="https://open.spotify.com/playlist/0lpWoogq6l3PB2YQGE6Dtr?si=49c3a264a6534695" target="_blank" id="music">
+                <img src="img/OIP (1).jpeg" alt="bean"> Bean
+            </a>
+            <a href="https://open.spotify.com/playlist/3AmztbG6a1MyXGOepPh3oT?si=cc53e0c88cad4dae" target="_blank" id="music">
+                <img src="img/OIP.jpeg" alt="ringa"> Ringa
+            </a>
+            <a href="https://open.spotify.com/playlist/6NYD17sapX9DGn7YUIZCRU?si=41037fdd9f444dc4" target="_blank" id="music">
+                <img src="img/Spy-x-family-anya-forger-sonrisa.webp" alt="anya"> Forger
+            </a>
+            <a href="https://open.spotify.com/playlist/4OzfznuA276tHJs1pZhfWG?si=9f8c2d5bf70b4cff" target="_blank" id="music">
+                <img src="img/maxresdefault.jpg" alt="murray"> Murray
+            </a>
+            <a href="https://open.spotify.com/playlist/3qloDqXU8lDyUoiODJhQdb?si=16c41d21bb484a01" target="_blank" id="music">
+                <img src="img/baixados.jpeg" alt="azul"> Blue Pen
+            </a>
+        </div>
+    </nav>
+
+    <nav class="direita">
+        <p id="albun">
+            <a 
+                href="https://open.spotify.com/intl-pt/album/63xNXfql8mdsOd1fZjodbf?si=_CTDKMT9T2WwzxxhE9LNeA" target="_blank">Albun 
+            </a>
+            <a href="#" target="_blank">
+                <box-icon name='x'></box-icon>
+            </a>
+            <div class="dir-img">
+                <img id="musica-1" src="img/OIPdd.jpeg" alt="value-music">
+            </div>
+        </p>
+        <p id="nome-musica">
+                <a href="https://open.spotify.com/intl-pt/track/6BEnpVB7g2j8mzWs3MC2kh?si=da0bd058e7b04cb8" target="_blank"><span style="font-size: 25px;">Value </span></a>
+                <i>     
+                    <a id="plus-circle" href="#" target="_blank">
+                        <box-icon name='plus-circle'></box-icon>
+                    </a>
+                    <a href="#" target="_blank">
+                        <box-icon name='dots-horizontal' ></box-icon>
+                    </a>
+                </i>
+        </p>
+        <p id="artista"> <a href="https://open.spotify.com/intl-pt/artist/6mEQK9m2krja6X1cfsAjfl?si=y1WFTMQ2TZCURGpiIjq36g" target="_blank">Ado</a> </p> 
+
+        <div class="dir-img2">
+            <img id="musica-2" src="img/OIP (2).jpeg" alt="cachorro">
+            <div class="text">
+                Sobre o artista
+            </div>
+            <p>
+                Cachorro <a href="#">Seguir</a><br><br>
+                9.999.999.999 Ouvintes Mensais 
+            </p>
+        </div>  
+    </nav>
+    <article class="center">
+        <div class="div-center">
+            <div class="top-center">
+                <i>
+                    <box-icon name='left-arrow-alt' ></box-icon>
+                    <box-icon name='right-arrow-alt' ></box-icon>
+                </i>
+                <box-icon type='solid' name='down-arrow-circle'></box-icon>
+            </div>
+
+            <div class="img-center">
+                <a href="#"><span><img src="img/OIP (3).jpeg" alt=""> <p>Musica</p></span></a>
+                <a href="#"><span><img src="img/OIP (2).jpeg" alt=""> <p>MUsica</p></span></a>
+                <a href="#"><span><img src="img/R.jpeg" alt=""> <p>musica</p></span></a>
+                <a href="#"><span><img src="img/OIP.jpeg" alt=""><p>musica</p></span></a>
+                <a href="#"><span><img src="img/OIP (3).jpeg" alt=""> <p>Musica</p></span></a>
+
+                <a href="#"><span><img src="img/OIP (2).jpeg" alt=""> <p>MUsica</p></span></a>
+                <a href="#"><span><img src="img/R.jpeg" alt=""> <p>musica</p></span></a>
+                <a href="#"><span><img src="img/OIP.jpeg" alt=""><p>musica</p></span></a>
+                <a href="#"><span><img src="img/R.jpeg" alt=""> <p>musica</p></span></a>
+                <a href="#"><span><img src="img/OIP.jpeg" alt=""><p>musica</p></span></a>
+            </div>
+            <p>
+                Feitas Para Mewing
+            </p>
+            <div class="playlist-center">  
+                <div>
+                    <span><img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="">Daily Mix 1 <i>Cachorro</i></span>
+                    <span><img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="">Daily Mix 2 <i>Cachorro</i></span>
+                    <span><img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="">Daily Mix 3 <i>Cachorro</i></span>
+                    <span><img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="">Daily Mix 4 <i>Cachorro</i></span>
+                    <span><img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="">Daily Mix 5 <i>Cachorro</i></span>
+                </div>
+            </div>
+
+            <p>
+                Tocados Recentementes
+            </p>
+            <div class="playlist-center">  
+                <div>
+                    <span><img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="">Daily Mix 1 <i>Cachorro</i></span>
+                    <span><img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="">Daily Mix 2 <i>Cachorro</i></span>
+                    <span><img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="">Daily Mix 3 <i>Cachorro</i></span>
+                    <span><img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="">Daily Mix 4 <i>Cachorro</i></span>
+                    <span><img src="img/frieren-ultrawide-5040x2160-15153.jpg" alt="">Daily Mix 5 <i>Cachorro</i></span>
+                </div>
+            </div>         
+        </div>
+        <div class="play">
+            <audio controls src="#"></audio>
+        </div>
+    </article> 
+</body>
+</html>

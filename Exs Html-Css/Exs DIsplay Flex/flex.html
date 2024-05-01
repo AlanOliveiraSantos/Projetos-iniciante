@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+
+    <style>
+        .principal{
+            background-color: antiquewhite;
+            padding: 5px;
+            height: 100px;
+            display: flex;
+            justify-content:center;
+            flex-direction: row; /*Muda a direção do eixo principal*/
+            align-items: baseline;
+            flex-wrap: wrap;/* Caso os elementos não caibam em uma linha ele quebra para lina de baixo*/
+            gap: 20px 10px;/* cria um espaço entre os elementos*/
+        }
+        .box1{
+            background-color: aqua;
+            text-align: center;
+            width: 50px; 
+            border-radius: 5px;
+            padding: 10px; 
+            margin-top: 5px;
+            font-size: 30px;
+        }
+        .box2{
+            background-color: chartreuse;
+            text-align: center;
+            width: 50px; 
+            border-radius: 5px;
+            padding: 10px; 
+            margin-top: 5px;
+            font-size: 20px;
+        }
+        .box3{
+            background-color: brown;
+            text-align: center;
+            width: 50px; 
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <main class="principal">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </main>
+</body>
+</html>
