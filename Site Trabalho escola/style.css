@@ -12,17 +12,22 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 98vh;
+    height: 97vh;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  height: 99%;
+  margin: 10px;
 }
 .container {
     flex-direction: column;
     background-color: white;
-    width: 720px;
-    height: 800px;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #202e7eb2;
-
   }
   input[type="number"], input[type="button"] {
     width: 300px;

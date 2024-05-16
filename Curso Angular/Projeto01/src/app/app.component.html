@@ -1,0 +1,7 @@
+<app-navbar></app-navbar>
+<app-base-ui>
+  <router-outlet></router-outlet>
+  <button (click)="esconder()" class="btn btn-secondary">Esconder Foooter</button>
+</app-base-ui>
+<app-footer [hidden]="!exibefooter"></app-footer>
+

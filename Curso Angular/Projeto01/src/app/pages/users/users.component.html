@@ -1,0 +1,10 @@
+<ul>
+  <!-- ngFor está dizendo ao Angular para criar um elemento <li> para cada nome na tag "users" do TypeScript.-->
+  <li *ngFor="let item of users">{{ item }}</li>
+</ul>
+
+<ul class="list-buttom">
+  <li *ngFor="let user of users2">
+    <button [routerLink]="'/users/' + user" class="btn btn-primary">{{ user }}</button>
+  </li>
+</ul>

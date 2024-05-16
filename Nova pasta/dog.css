@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right, rgba(165, 165, 165, 0.685) 40% , rgba(1, 1, 20, 0.733) 0%);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+@media screen and (max-width: 700px){
+    main{
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    #conteudo{
+        flex-direction: column;
+        flex-wrap: none;
+        width: 98%;
+        height: auto;
+        border-radius: 0px;
+    }
+    #dog{
+        align-items: center;
+        justify-content: center;
+        width: 98%;
+        height: 98%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0px;
+    }
+    #box01 , #box02 , #box03 , #box04{
+        width: 600px;
+    }
+    #box01 > p, #box02 > p, #box03 > p, #box04 > p{
+        text-align: justify;
+    }
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 900px;
+    width: 1000px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 20px;
+    padding: 0px 30px;
+}
+p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+
+    margin-top: 18px;
+    padding: 0px 30px 30px 30px;
+}
+.box01{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.box02{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.box03{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.box04{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.box01 h1{
+    color: rgba(13, 13, 90, 0.623);
+}
+.box02 h1{
+    color: rgba(16, 165, 95, 0.671);
+}
+.box03 h1{
+    color: rgba(143, 13, 13, 0.651);
+}
+.box04 h1{
+    color: rgba(10, 114, 10, 0.623);
+}
+.dog{
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(230, 228, 228, 0.986);
+    height: 900px;
+    border-radius: 0px 10px 10px 0px;
+}
+.dog p{
+    font-size: 40px;
+    line-height: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:aliceblue;
+    box-shadow: black 0px 2px 5px ;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px;
+}
+img{
+    width: 377px;
+    height: 384px;
+    margin: 50px 0px 0px 50px;
+}
